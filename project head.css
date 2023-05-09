@@ -53,3 +53,33 @@ li a{
    font-weight:lighter;
    font-size:20px;
 }
+.mainmenu li{
+    position:relative;
+}
+.submenu{
+    position:absolute;
+    top:34px;
+    left:0px;
+    display:none;
+    padding:1.3rem;
+    width:220px;
+    background-color:green;
+    
+    
+}
+.submenu li a{
+    border-bottom:2px solid #fff;
+    color:#fff;
+    width:100%;
+    display:block;
+    
+}
+.mainmenu li:hover .submenu{
+    display:block;
+    background-color:rgb(60, 82, 60);
+
+}
+.mainmenu li a:hover{
+    
+    border-bottom:2px solid green;
+}
