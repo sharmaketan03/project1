@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#000;
+}
+#wrapper{
+    width:90%;
+   
+}
+.box{
+    margin:10rem auto;
+    border:20px  double yellow;
+    width:500px;
+    height:200px;
+}
+.box1{
+    margin:2rem;
+    border:2px solid;
+    width:400px;
+    height:100px;
+    position:relative;
+    background-color:yellow;
+    animation:mymove 5s 2 ease;
+}
+.cap{
+    border: 20px solid yellow;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 444px;
+    top: 31px;
+    background-color:yellow;
+}
+@keyframes mymove{
+          0%{
+               width:0px;
+          }
+          25%{
+            width:100px
+          }
+          50%{
+            width:200px;
+          }
+          75%{
+            width:300px;
+          }
+          100%{
+            width:400px;
+          }
+}

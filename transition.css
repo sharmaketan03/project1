@@ -25,12 +25,14 @@
 }
 a{
     text-decoration:none;
-    margin:5rem 0 0 -63px;
+    margin:5rem 0 -2rem -78px;
     border:1px solid;
     font-size:20px;
     padding:0.7rem;
     position:relative;
     z-index:1;
+    display:inline-block;
+    overflow:hidden;
 
 
 }
@@ -61,5 +63,35 @@ p{
 }
 .frst:hover::after{
     right:0;
+}
+.second::before,.third::before,.fourth::before{
+    content:" ";
+    position:absolute;
+    
+    background-color:black;
+    opacity:0.55;
+    z-index:2;
+    transition:all 0.7s ease;
+}
+.second::before{
+    left:0;
+    top:46px;
+    width:100%;
+    height:100%;
+}
+.third::before{
+    top: -29px;
+width: 20%;
+height: 100%;
+left: 65px;
+transform: skew(-99deg,-186deg);
+transition: all 0.7s ease;
+}
+.third:hover::before{
+    left:-100px;
+    top:15px;
+}
+.second:hover::before{
+      top:0;
 }
 
