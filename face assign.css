@@ -33,12 +33,12 @@
 }
   
 .eye2{
-    position:absolute;
+    position:sticky;
     width:20px;
     height:45px;
     left: 49px;
 top: 45px;
-animation:sample 0.3s 5s linear;
+animation:sample 0.7s 5s linear;
 overflow:hidden;
 }
 .black1,.black2{
@@ -78,7 +78,7 @@ overflow:hidden;
                 transform:rotate(10deg);
              }
              to{
-                left:80%;
+                left:85%;
                 transform:rotate(360deg);
              }
 }
@@ -89,6 +89,7 @@ overflow:hidden;
     top: 41px;
     width: 23px;
     height: 10px;
+    animation:my 0.7s 5s linear;
     transform: rotate(90deg);
 }
 .line1 p{
@@ -102,13 +103,13 @@ transform: rotate(268deg);
 @keyframes sample{
           0%{
             left: 49px;
-            top:45px
-               height:45px;
+            top:60px
+               height:10px;
                width:20px;
           }
         50%{
             left: 49px;
-            top:60px;
+            top:90px;
             height:5px;
             width:20px;
           }
@@ -117,6 +118,7 @@ transform: rotate(268deg);
             top:100px;
             height:0px;
             width:20px;
+            position:fixed;
             
             
           }
@@ -146,8 +148,21 @@ animation:sample1 1s 6s linear;
           100%{
             width:100px;
             height:100px;
+            
           }
 
 
           }
+
+@keyframes my{
+           0%{
+               top:41px;
+           }
+           50%{
+              top:45px;
+
+           }
+           100%{
+            top:55px;
+           }
 }
