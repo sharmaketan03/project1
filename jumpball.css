@@ -31,9 +31,9 @@ body{
     position:absolute;
     top:118px;
     left:0;
-    animation:mymove 1.67324s 3.3 alternate linear;
+    animation:mymove  2s   infinite alternate linear;
 }
-.box2{
+ .box2{
     border:2px solid;
     width:40px;
     height:80px;
@@ -41,7 +41,7 @@ body{
     position:absolute;
     left:257px;
     top:118px;
-    animation:mymove1 1.80s 3.2  alternate linear;
+    animation:mymove1 2s infinite  alternate linear;
 }
 .ball{
     border: 2px solid;
@@ -52,34 +52,49 @@ background-color: black;
 position: absolute;
 left: 130px;
 top: 127px;
-animation:mymove2 1s 8 alternate linear;
-}
+animation:mymove2 1s infinite alternate linear;
+} 
+
 @keyframes mymove{
       0%{
            top:0px;
         }
-   
-    
-    100%{
+       100%{
             top:217px;
         }
 }
-@keyframes mymove1{
+ @keyframes mymove1{
      0%{
         top:217px;
      }
-   
+     
+  
+   100%{
+    top:0px;
+   }
     
-     100%{
-        top:0px;
-     }
+    
 }
 @keyframes mymove2{
       0%{
          left:38px;
       }
-      
-      100%{
-        left:217px;
+      50%{
+        left:138px;
       }
-    }
+     100%{ left:217px;
+      }
+     } 
+     .main a{
+        position:fixed;
+        top:80vh;
+        right:-9px;
+        border:2px solid;
+        color:#fff;
+        border-radius:5px;
+        background-color:antiquewhite;
+        padding:0.5rem;
+        transform:rotate(90deg);
+        text-decoration:none;
+        font-size:22px;
+     }

@@ -133,7 +133,8 @@ header .top a {
 }
 
 p {
-    margin: 3rem 0 3rem 0;
+    margin: 3rem 0 1rem 0;
+    padding:0 0 2rem 0;
 }
 
 i {
@@ -346,7 +347,7 @@ h4:first-child{
     text-align:center;
     background-color:green;
     color:#fff;
-    padding:1rem;
+    padding:0.6rem;
     display:block;
     font-size:20px;
 }
@@ -454,7 +455,7 @@ margin-right: 7rem;
 
 }
 .limg1{
-    margin:6rem 2rem 0 6rem;
+    margin:5rem 2rem 0 6rem;
     width:50%;
     color:#fff;
     z-index:1;
@@ -490,9 +491,14 @@ margin-right: 7rem;
 .limg21{
     background-color:#fff;
     font-size:22px;
+    
 }
 .limg22{
    color:#fff;
+   font-size:22px;
+   
+  
+   
    
 }
 .limg22:hover {
@@ -628,4 +634,32 @@ font-size: 25px;
     font-size:15px;
     font-weight:bold;
     color:#65687a;
+}
+.wrapper4 .fix{
+      color:black;
+      border:1px solid;
+      border-radius:5px;
+      position:fixed;
+      top:80vh;
+      right:-43px;
+      z-index:4;
+      background-color:green;
+      transform: rotate(90deg);
+      padding:0.5rem;
+      
+}
+.upbox{
+    margin-bottom:1rem;
+}
+.a1{
+    margin-top:1rem;
+}
+.a2{
+    margin-bottom:1rem;
+}
+.p1{
+    margin:2.6rem 0 0 0;
+}
+.c{
+    margin-bottom:1rem;
 }
